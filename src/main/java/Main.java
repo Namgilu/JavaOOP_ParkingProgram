@@ -35,7 +35,7 @@ public class Main {
                 int vehicleNumber = InputView.inputVehicleNumber();
                 String entranceTime = InputView.inputEntranceTime();
 
-                if ("c".equals(carType)) {
+                if ("c".equals(carType)) { // 팩토리패턴 사용하면 좋을거같습니다
                     Vehicles car = Car.getCar(vehicleCapacity, vehicleNumber, entranceTime);
                     parking.add(car);
                 } else if ("t".equals(carType)) {
